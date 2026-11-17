@@ -1,0 +1,15 @@
+experiment,feature_group,mean_abs_shap
+ridge_S1,core_predictors,4.917921792804325
+ridge_S2,core_predictors,4.604858861009192
+ridge_S2,measured_sleep,1.050081298850003
+ridge_S2,sleep_missingness,0.0419047596034093
+ridge_S3,core_predictors,4.4208129379849606
+ridge_S3,measured_sleep,0.7415389835147219
+ridge_S3,sleep_missingness,0.08758290619201681
+xgboost_S1,core_predictors,4.355477971640314
+xgboost_S2,core_predictors,3.743910518409177
+xgboost_S2,measured_sleep,0.3442718263687839
+xgboost_S2,sleep_missingness,0.0027111526783256
+xgboost_S3,core_predictors,4.383671937366869
+xgboost_S3,measured_sleep,0.8005271071780211
+xgboost_S3,sleep_missingness,0.0254391185538197

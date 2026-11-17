@@ -1,0 +1,56 @@
+{
+  "dataset": "C:\\Users\\skosa\\Downloads\\haalsi_cleaned_training_ready\\haalsi_404_cleaned.csv",
+  "n_participants": 404,
+  "target": "mmse_w2",
+  "outer_cv": "5-fold KFold shuffle=True seed=42",
+  "inner_cv": "3-fold KFold shuffle=True seed=19",
+  "selection_metric": "MAE",
+  "feature_sets": {
+    "S0_baseline_mmse": [
+      "mmse_w1"
+    ],
+    "S1_baseline_core": [
+      "mmse_w1",
+      "age_w2",
+      "sex",
+      "education_w1",
+      "cesd_w2",
+      "wealth_quintile_w2"
+    ],
+    "S2_baseline_core_engineered_sleep": [
+      "mmse_w1",
+      "age_w2",
+      "sex",
+      "education_w1",
+      "cesd_w2",
+      "wealth_quintile_w2",
+      "duration_mean",
+      "duration_change",
+      "duration_variability",
+      "quality_mean",
+      "quality_change",
+      "insufficiency_mean",
+      "insufficiency_change",
+      "bedtime_mean_shifted",
+      "bedtime_change"
+    ],
+    "S3_baseline_core_historical_sleep": [
+      "mmse_w1",
+      "age_w2",
+      "sex",
+      "education_w1",
+      "cesd_w2",
+      "wealth_quintile_w2",
+      "duration_w1",
+      "duration_w2",
+      "quality_w1",
+      "quality_w2",
+      "insufficiency_w1",
+      "insufficiency_w2",
+      "bedtime_w1",
+      "bedtime_w2"
+    ]
+  },
+  "caution": "W3 sleep may occur after baseline cognitive assessment; S2 is not a baseline-only prospective model.",
+  "additional_caution": "Check timing of W2 core covariates relative to intended prediction date."
+}

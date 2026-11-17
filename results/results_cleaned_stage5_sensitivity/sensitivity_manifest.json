@@ -1,0 +1,19 @@
+{
+  "dataset_sha256": "77E2B9D4A6B72D846A9D5767FF86F54C77413536DA30BC1B8D82827F5F46C36E",
+  "fold": 1,
+  "example_index": 0,
+  "seeds": [
+    11,
+    21,
+    42,
+    73,
+    101,
+    202,
+    303,
+    404,
+    505,
+    606
+  ],
+  "lime_samples": 2000,
+  "note": "LIME uses perturbed transformed features; missingness and one-hot perturbations may be unrealistic. R2 is local surrogate fit, not predictive model test R2. SHAP group sums are descriptive, not independent effects."
+}

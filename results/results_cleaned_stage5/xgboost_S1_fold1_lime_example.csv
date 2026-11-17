@@ -1,0 +1,13 @@
+rule,lime_weight
+numeric__age_w2 > 75.00,-1.9151749461683056
+categorical__education_w1_1.0 <= 0.00,1.809086655569515
+categorical__education_w1_4.0 <= 0.00,-0.6243480563535194
+categorical__wealth_quintile_w2_4.0 <= 0.00,-0.4973604321677116
+categorical__sex_1.0 <= 0.00,-0.47064512028127703
+categorical__education_w1_3.0 <= 0.00,-0.45928179239990424
+categorical__wealth_quintile_w2_1.0 > 0.00,-0.39840585581154164
+categorical__wealth_quintile_w2_5.0 <= 0.00,-0.3396587968809522
+16.00 < numeric__mmse_w1 <= 20.00,0.24034035217684274
+categorical__wealth_quintile_w2_3.0 <= 0.00,0.22146384498045188
+categorical__wealth_quintile_w2_2.0 <= 0.00,0.18863014627477265
+0.00 < categorical__sex_2.0 <= 1.00,-0.159903713284268

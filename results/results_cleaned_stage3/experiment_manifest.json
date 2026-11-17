@@ -1,0 +1,140 @@
+{
+  "n_participants": 404,
+  "target": "mmse_w2",
+  "outer_cv": "5-fold KFold seed 42",
+  "inner_cv": "3-fold KFold seed 19",
+  "selection_metric": "MAE",
+  "grid": {
+    "model__n_estimators": [
+      100,
+      250
+    ],
+    "model__max_depth": [
+      2,
+      3
+    ],
+    "model__learning_rate": [
+      0.03,
+      0.1
+    ],
+    "model__min_child_weight": [
+      3
+    ],
+    "model__subsample": [
+      0.85
+    ],
+    "model__colsample_bytree": [
+      0.85
+    ]
+  },
+  "feature_sets": {
+    "S0_baseline_mmse": [
+      "mmse_w1"
+    ],
+    "S1_baseline_core": [
+      "mmse_w1",
+      "age_w2",
+      "sex",
+      "education_w1",
+      "cesd_w2",
+      "wealth_quintile_w2"
+    ],
+    "S2_baseline_core_engineered_sleep": [
+      "mmse_w1",
+      "age_w2",
+      "sex",
+      "education_w1",
+      "cesd_w2",
+      "wealth_quintile_w2",
+      "duration_mean",
+      "duration_change",
+      "duration_variability",
+      "quality_mean",
+      "quality_change",
+      "insufficiency_mean",
+      "insufficiency_change",
+      "bedtime_mean_shifted",
+      "bedtime_change"
+    ],
+    "S3_baseline_core_historical_sleep": [
+      "mmse_w1",
+      "age_w2",
+      "sex",
+      "education_w1",
+      "cesd_w2",
+      "wealth_quintile_w2",
+      "duration_w1",
+      "duration_w2",
+      "quality_w1",
+      "quality_w2",
+      "insufficiency_w1",
+      "insufficiency_w2",
+      "bedtime_w1",
+      "bedtime_w2"
+    ],
+    "A1_without_duration": [
+      "mmse_w1",
+      "age_w2",
+      "sex",
+      "education_w1",
+      "cesd_w2",
+      "wealth_quintile_w2",
+      "quality_mean",
+      "quality_change",
+      "insufficiency_mean",
+      "insufficiency_change",
+      "bedtime_mean_shifted",
+      "bedtime_change"
+    ],
+    "A2_without_quality": [
+      "mmse_w1",
+      "age_w2",
+      "sex",
+      "education_w1",
+      "cesd_w2",
+      "wealth_quintile_w2",
+      "duration_mean",
+      "duration_change",
+      "duration_variability",
+      "insufficiency_mean",
+      "insufficiency_change",
+      "bedtime_mean_shifted",
+      "bedtime_change"
+    ],
+    "A3_without_insufficiency": [
+      "mmse_w1",
+      "age_w2",
+      "sex",
+      "education_w1",
+      "cesd_w2",
+      "wealth_quintile_w2",
+      "duration_mean",
+      "duration_change",
+      "duration_variability",
+      "quality_mean",
+      "quality_change",
+      "bedtime_mean_shifted",
+      "bedtime_change"
+    ],
+    "A4_without_bedtime": [
+      "mmse_w1",
+      "age_w2",
+      "sex",
+      "education_w1",
+      "cesd_w2",
+      "wealth_quintile_w2",
+      "duration_mean",
+      "duration_change",
+      "duration_variability",
+      "quality_mean",
+      "quality_change",
+      "insufficiency_mean",
+      "insufficiency_change"
+    ]
+  },
+  "python": "3.14.0",
+  "sklearn": "1.9.0",
+  "xgboost": "3.4.1",
+  "warning": "S2 and ablations use W3 sleep; core covariate timing needs review. These models are not necessarily prospective forecasts.",
+  "note": "Bootstrap CIs quantify participant-level paired loss uncertainty but do not correct for nested-CV/model-selection dependence."
+}

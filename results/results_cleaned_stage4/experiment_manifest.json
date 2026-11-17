@@ -1,0 +1,44 @@
+{
+  "dataset_sha256": "77E2B9D4A6B72D846A9D5767FF86F54C77413536DA30BC1B8D82827F5F46C36E",
+  "n": 404,
+  "python": "3.14.0",
+  "torch": "2.14.1+cpu",
+  "sklearn": "1.9.0",
+  "pandas": "2.3.3",
+  "numpy": "2.4.3",
+  "seed_outer": 42,
+  "seed_inner": 19,
+  "seed_training": "1000+fold*100+inner_fold; 2000+outer_fold",
+  "outer_cv": "5-fold shuffled KFold",
+  "inner_cv": "3-fold shuffled KFold",
+  "selection_metric": "inner mean MAE",
+  "early_stopping": "18% internal training-only validation, MSE; then refit full training fold",
+  "epochs_max": 80,
+  "patience": 12,
+  "configs": [
+    {
+      "hidden": 8,
+      "dropout": 0.15,
+      "weight_decay": 0.01,
+      "lr": 0.001
+    },
+    {
+      "hidden": 16,
+      "dropout": 0.3,
+      "weight_decay": 0.05,
+      "lr": 0.001
+    }
+  ],
+  "variants": {
+    "T1_three_waves": [
+      1,
+      2,
+      3
+    ],
+    "T2_historical_waves": [
+      1,
+      2
+    ]
+  },
+  "warning": "W3 sleep may postdate baseline dementia assessment; W2 core covariates may also postdate baseline. T2 is not automatically a strictly prospective design."
+}

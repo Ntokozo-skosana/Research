@@ -1,0 +1,9 @@
+{
+  "analysis": "Alternative Wave 1 MMSE scoring sensitivity; NOT official corrected data",
+  "n": 404,
+  "n_changed": 62,
+  "outcome": "mmse_w2 unchanged",
+  "cv": "same 5 outer folds seed 42; 3 inner folds seed 19; Ridge alpha grid 0.1,1,10,100",
+  "bootstrap_resamples": 5000,
+  "caution": "Candidate item-reconstruction anomaly unverified; missingness and timing validity unresolved; do not replace official scores."
+}

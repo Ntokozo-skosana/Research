@@ -1,0 +1,12 @@
+{
+  "dataset_sha256": "77E2B9D4A6B72D846A9D5767FF86F54C77413536DA30BC1B8D82827F5F46C36E",
+  "n": 404,
+  "epochs": 80,
+  "patience": 12,
+  "bootstrap_samples": 5000,
+  "seed_outer": 42,
+  "seed_inner": 19,
+  "control": "Three-wave LSTM identical to Stage 4 architecture; all 6 sequence channels (including missingness) zeroed in both training and prediction; core covariates retained; inner tuning and early stopping repeated.",
+  "bootstrap_note": "Participant-level bootstrap of paired held-out absolute errors; confidence intervals descriptive and do not incorporate uncertainty from retraining or model selection.",
+  "caution": "Sleep signal not isolated in GRU because no GRU no-sleep control trained. Historical and three-wave variants differ in sequence length. Temporal alignment and partially completed MMSE assessments remain unresolved."
+}

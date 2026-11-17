@@ -1,0 +1,10 @@
+model,baseline,augmented,n,baseline_mae,augmented_mae,delta_mae_augmented_minus_baseline
+dummy,S0_baseline_mmse,S1_baseline_core,404,4.353126231095762,4.353126231095762,0.0
+dummy,S1_baseline_core,S2_baseline_core_engineered_sleep,404,4.353126231095762,4.353126231095762,0.0
+dummy,S1_baseline_core,S3_baseline_core_historical_sleep,404,4.353126231095762,4.353126231095762,0.0
+ridge,S0_baseline_mmse,S1_baseline_core,404,3.3973696767479686,3.1170203556656397,-0.28034932108232874
+ridge,S1_baseline_core,S2_baseline_core_engineered_sleep,404,3.1170203556656397,3.202337803070463,0.08531744740482293
+ridge,S1_baseline_core,S3_baseline_core_historical_sleep,404,3.1170203556656397,3.1761776820630963,0.05915732639745648
+random_forest,S0_baseline_mmse,S1_baseline_core,404,3.493446465108232,3.2503665204973253,-0.24307994461090596
+random_forest,S1_baseline_core,S2_baseline_core_engineered_sleep,404,3.2503665204973253,3.2363231633352663,-0.014043357162059511
+random_forest,S1_baseline_core,S3_baseline_core_historical_sleep,404,3.2503665204973253,3.2592298516132403,0.008863331115914808
