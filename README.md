@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Predicting Cognitive Performance from Longitudinal Sleep Patterns Using Interpretable Machine Learning
 
 ## Overview
